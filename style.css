@@ -4,17 +4,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #f4f7f4;
+    background-color: #f4f7f5;
     color: #333;
+    scroll-behavior: smooth;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #2e7d32;
+    background-color: #2e5a36;
     color: white;
     padding: 20px 50px;
     display: flex;
@@ -30,123 +30,128 @@ header .logo {
     font-weight: bold;
 }
 
-header nav a {
+nav a {
     color: white;
     text-decoration: none;
     margin-left: 20px;
     font-weight: 500;
-    transition: 0.3s;
 }
 
-header nav a:hover {
-    color: #a5d6a7;
+nav a:hover {
+    text-decoration: underline;
 }
 
-/* Seção Hero */
+/* Banner Hero */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200') no-repeat center center/cover;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
-    padding: 20px;
 }
 
 .hero-content h1 {
     font-size: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .hero-content p {
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
-.btn-principal {
-    background-color: #81c784;
-    color: #1b5e20;
-    padding: 12px 30px;
+.btn {
+    background-color: #8bc34a;
+    color: white;
+    padding: 12px 25px;
     text-decoration: none;
+    border-radius: 5px;
     font-weight: bold;
-    border-radius: 25px;
     transition: 0.3s;
 }
 
-.btn-principal:hover {
-    background-color: #4caf50;
-    color: white;
+.btn:hover {
+    background-color: #7cb342;
 }
 
-/* Seção Pilares */
+/* Seção de Pilares */
 .pilares-section, .simulador-section {
     padding: 60px 20px;
     text-align: center;
 }
 
 .pilares-section h2, .simulador-section h2 {
-    font-size: 32px;
-    color: #2e7d32;
+    color: #2e5a36;
     margin-bottom: 40px;
 }
 
 .cards-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 .card {
-    background-color: white;
+    background: white;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 8px;
     width: 300px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
+    border-top: 5px solid #2e5a36;
 }
 
 .card h3 {
     margin-bottom: 15px;
-    color: #388e3c;
+    color: #2e5a36;
 }
 
 /* Simulador */
 .simulador-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.opcoes {
-    text-align: left;
+    background: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
-.opcoes label {
+.controles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
     font-size: 18px;
-    cursor: pointer;
-}
-
-.resultado {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 350px;
 }
 
 .barra-progresso {
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    height
+    background-color: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.barra {
+    width: 0%;
+    height: 30px;
+    background-color: #8bc34a;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    transition: width 0.5s ease;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2e5a36;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
